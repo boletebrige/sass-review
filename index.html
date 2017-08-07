@@ -3,12 +3,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>My New Site!</title>
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    anything random here <br>
-    more rando stuff here
+<body class="site single">
+    
+    <!-- BEM BlockElementModifier 
+        http://getbem.com/naming/
+        .site
+        .site__header
+        .site__main
+        .site__footer
+
+        .article
+        .article--single
+    -->
+    <!-- HEADER -->
+    <header id="site__header"></header>
+    <!-- MAIN -->
+    <main id="site__main">
+        <!-- ARTICLE -->
+        <article class="article article--single">
+            <!-- ARTICLE HEADER -->
+            <header class="article__header">
+                <h1>Lorem ipsum dolor sit amet</h1>
+                <!-- BYLINE -->
+                <div class="byline">
+                    <div class="byline__box byline__author">
+                        Josip Ravas (@RavasJosip)
+                    </div>
+                    <div class="byline__box byline__time">
+                        <time>
+                            Januar 1, 1970
+                        </time>
+                    </div>
+                </div>
+            </header>
+            <!-- ARTICLE IMAGE -->
+            <div class="article__image">
+                <img src="https://d2jq2hx2dbkw6t.cloudfront.net/20/CnuMia6WAAA8ShL.jpg-large" alt="Article image">
+            </div>
+            <!-- ACTION BUTTONS -->
+            <div class="actions">
+                <a href="#" class="action__btn action__btn--code">View Code</a>
+                <a href="#" class="action__btn action__btn--demo">View Demo</a>
+            </div>
+            <!-- ARTICLE INNER -->
+            <div class="article__inner">
+                <!-- SIDEBAR -->
+                <aside class="sidebar">
+                    <!-- TABLE OF CONTENTS 
+                        ul.table-of-contents>li*4>a
+                    -->
+                    <ul class="table-of-contents">
+                        <li><a href="#">Introduction</a></li>
+                        <li><a href="#">Getting Started</a></li>
+                        <li><a href="#">Implementing</a></li>
+                        <li><a href="#">Building</a></li>
+                        <li><a href="#">Conclusion</a></li>
+                    </ul>
+                    <div class="ad">
+                        <img src="http://placekitten.com/g/300/250">
+                    </div>
+                </aside>
+                <!-- CONTENT BODY -->
+                <div class="article__content content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid veritatis ipsam cum laborum ut. Voluptates laudantium quo deleniti fugiat labore consequatur modi, eum, exercitationem amet veritatis tempore et cupiditate. Nihil.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid veritatis ipsam cum laborum ut. Voluptates laudantium quo deleniti fugiat labore consequatur modi, eum, exercitationem amet veritatis tempore et cupiditate. Nihil.</p>
+                </div>
+            </div>
+
+        </article>
+    </main>
+    <!-- FOOTER -->
+    <footer id="site__footer"></footer>
 </body>
 </html>
